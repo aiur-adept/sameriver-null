@@ -3,7 +3,7 @@ module github.com/aiur-adept/sameriver-null
 go 1.19
 
 require (
-	github.com/aiur-adept/sameriver/v5 v5.0.1
+	github.com/aiur-adept/sameriver/v5 v5.0.2
 	github.com/veandco/go-sdl2 v0.4.40
 )
 
