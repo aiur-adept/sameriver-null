@@ -18,4 +18,6 @@ type GameScene struct {
 	// GameScene members
 	w      *sameriver.World
 	player *sameriver.Entity
+
+	obstacles []*sameriver.Entity
 }

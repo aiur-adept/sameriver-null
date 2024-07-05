@@ -44,6 +44,20 @@ func (s *GameScene) spawnInitialEntities() {
 		},
 		"tags": []string{"player"},
 	})
+
+	o := s.w.Spawn(map[string]any{
+		"components": map[sameriver.ComponentID]any{
+			sameriver.POSITION_:     sameriver.Vec2D{200, 200},
+			sameriver.VELOCITY_:     sameriver.Vec2D{0, 0},
+			sameriver.ACCELERATION_: sameriver.Vec2D{0, 0},
+			sameriver.BOX_:          sameriver.Vec2D{100, 100},
+			sameriver.MASS_:         1.0,
+			sameriver.RIGIDBODY_:    true,
+		},
+		"tags": []string{"obstacle"},
+	})
+
+	s.obstacles = append(s.obstacles, o)
 }
 
 func (s *GameScene) SimpleEntityDraw(

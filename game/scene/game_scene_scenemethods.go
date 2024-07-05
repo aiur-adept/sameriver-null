@@ -19,6 +19,10 @@ func (s *GameScene) Update(dt_ms float64, allowance_ms float64) {
 func (s *GameScene) Draw(w *sdl.Window, r *sdl.Renderer) {
 	// draw the player
 	s.SimpleEntityDraw(r, s.player, sdl.Color{255, 255, 255, 255})
+
+	for _, o := range s.obstacles {
+		s.SimpleEntityDraw(r, o, sdl.Color{255, 0, 0, 255})
+	}
 }
 
 func (s *GameScene) HandleKeyboardState(kb []uint8) {
