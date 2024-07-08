@@ -3,7 +3,7 @@ package scene
 import (
 	"time"
 
-	"github.com/aiur-adept/sameriver/v5"
+	"github.com/aiur-adept/sameriver/v6"
 )
 
 func (s *GameScene) Init(game *sameriver.Game, config map[string]string) {

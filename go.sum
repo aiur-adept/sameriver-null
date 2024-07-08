@@ -1,7 +1,7 @@
 github.com/TwiN/go-color v1.4.0 h1:fNbOwOrvup5oj934UragnW0B1WKaAkkB85q19Y7h4ng=
 github.com/TwiN/go-color v1.4.0/go.mod h1:0QTVEPlu+AoCyTrho7bXbVkrCkVpdQr7YF7PYWEtSxM=
-github.com/aiur-adept/sameriver/v5 v5.0.3 h1:S8QA6FgIHNXxnIWJmLnlQ/dIXfYyoReqUo1b6kmwAzg=
-github.com/aiur-adept/sameriver/v5 v5.0.3/go.mod h1:2wff/0HZEvZQipeISIWU8BH9qoTkR3VEjMJEOvZ6/U4=
+github.com/aiur-adept/sameriver/v6 v6.0.0 h1:1wxwi1+Lhbx3jn37el4LuB6prPBjZJl8u4gYyr/vocc=
+github.com/aiur-adept/sameriver/v6 v6.0.0/go.mod h1:PQcUxdoQG6Po9bNGFXYLH1n1nZzK2Lcfw+3UtQYFiyA=
 github.com/aquilax/go-perlin v1.1.0 h1:Gg+3jQ24wT4Y5GI7TCRLmYarzUG0k+n/JATFqOimb7s=
 github.com/aquilax/go-perlin v1.1.0/go.mod h1:z9Rl7EM4BZY0Ikp2fEN1I5mKSOJ26HQpk0O2TBdN2HE=
 github.com/davecgh/go-spew v1.1.1 h1:vj9j/u1bqnvCEfJOwUhtlOARqs3+rkHYY13jYWTU97c=

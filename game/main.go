@@ -4,7 +4,7 @@ import (
 	"fmt"
 
 	"github.com/aiur-adept/sameriver-null/game/scene"
-	"github.com/aiur-adept/sameriver/v5"
+	"github.com/aiur-adept/sameriver/v6"
 )
 
 func main() {

@@ -5,7 +5,7 @@ import (
 
 	"github.com/veandco/go-sdl2/sdl"
 
-	"github.com/aiur-adept/sameriver/v5"
+	"github.com/aiur-adept/sameriver/v6"
 
 	"github.com/aiur-adept/sameriver-null/game/systems"
 )
@@ -63,14 +63,14 @@ func (s *GameScene) spawnInitialEntities() {
 func (s *GameScene) SimpleEntityDraw(
 	r *sdl.Renderer, e *sameriver.Entity, c sdl.Color) {
 
-	box := e.GetVec2D(sameriver.BOX_)
-	pos := e.GetVec2D(sameriver.POSITION_).ShiftedCenterToBottomLeft(*box)
+	box := s.w.GetVec2D(e, sameriver.BOX_)
+	pos := s.w.GetVec2D(e, sameriver.POSITION_).ShiftedCenterToBottomLeft(*box)
 	r.SetDrawColor(c.R, c.G, c.B, c.A)
 	s.game.Screen.FillRect(r, &pos, box)
 }
 
 func (s *GameScene) playerHandleKeyboardState(kb []uint8) {
-	v := s.player.GetVec2D(sameriver.VELOCITY_)
+	v := s.w.GetVec2D(s.player, sameriver.VELOCITY_)
 	// get player v1
 	v.X = 0.4 * float64(
 		int8(kb[sdl.SCANCODE_D]|kb[sdl.SCANCODE_RIGHT])-
